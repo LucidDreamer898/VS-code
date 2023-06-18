@@ -12,7 +12,7 @@ const MonthView = () => {
             <div className="text-white pt-3">
                 April
             </div>
-            <div className="grid grid-cols-7 gap-4 w-56 h-72 mr-2 ml-2">
+            <div className="grid grid-cols-7 gap-4 w-56 h-72 mr-2 mt-4">
                 {days.map(days => (
                     <div className="flex justify-center items-center text h-8 w-8 border-LinesColor border-2 rounded-md text-NavBarTextColor">{days}</div>
                 ))}

@@ -1,19 +1,13 @@
 import Navbar from "./components/Navbar";
-import Filter from "./components/Filter";
-import PastProjects from "./components/PastProjects";
-import { PlusSquareFill } from "react-bootstrap-icons";
+import HomePage from "./pages/home/HomePage";
 
-const App = () => {
-  return (
-    <>
-      <div className="fixed flex flex-col w-full h-screen bg-neutral-500 overflow-scroll">
-        <Navbar/>
-        <Filter/>
-        <PastProjects/>
-        <button className="absolute bottom-8 right-10 text-sky-500 hover:text-sky-800"><PlusSquareFill size={65}/></button>
+export default function App(){
+  return(
+    <div className="flex flex-col w-full">
+      <Navbar/>
+      <div className="fixed top-20 left-0 bottom-0 right-0">
+        <HomePage/>
       </div>
-    </>
+    </div>
   )
 }
-
-export default App;
